@@ -1,0 +1,10 @@
+To create the configuration file -> tsc --init
+
+To run the watch mode -> tsc --watch {filename}
+
+To create the js file -> tsc {filename}
+
+TLDR; TypeScript uses the DOM typings for the global execution environment;
+To solve this:
+1. Change Variable name
+2. use "export {}" in the end of ts file
