@@ -1,7 +1,7 @@
 let mongoose = require("mongoose");
 let {Practice, User} = require("./models/scheme");
 
-let uri = "mongodb+srv://ama29n:MsIYt5IIVFGmDQS1@nodeexpress.0yobt.mongodb.net/Practice?retryWrites=true&w=majority";
+let uri = "";
 
 let connect = async () => {
     await mongoose.connect(uri);
@@ -195,21 +195,3 @@ connect();
 // }
 
 // run();
-
-
-
-
-
-
-
-
-async function run() {
-    try {
-        
-
-    } catch (error) {
-        console.log(error.message);
-    }
-}
-
-run();
