@@ -36,7 +36,7 @@ connect();
 //   CONNECTED TO DB
 
 
-// Here we can se that we were able to see the copy of our user and we connected to the database afterwards,
+// Here we can see that we were able to see the copy of our user and we connected to the database afterwards,
 
 
 // However, here if we will print the user, everytime the _id will be different but we are not pushing this data into the database.
@@ -129,7 +129,7 @@ connect();
 //         // find method on a specific 
 //         // let user = await User.find({name: "Aman"});
 
-//         // exits method
+//         // exists method
 //         // let check = await User.exists({name: "Aman"});
 
 //         // deleteOne and deleteMany method 
