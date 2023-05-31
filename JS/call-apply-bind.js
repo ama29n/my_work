@@ -1,3 +1,8 @@
+// The value of this is determined by how a function is called and this process is known as runtime binding. 
+// The bind() method can set the value of a function's this regardless of how it's called, and arrow functions 
+// don't provide their own this binding (it retains the this value of the enclosing lexical context).
+
+
 let obj = {
     firstName: "X",
     lastName: "Y"
@@ -9,6 +14,7 @@ let printName = function(age) {
 
 // console.log(printName.call(obj, 20));
 // console.log(printName.apply(obj, [20]));
+
 
 // Bind returns a function
 // const fs = printName.bind(obj);
@@ -131,6 +137,3 @@ description1.getColor.call(description2);
 // Output: 
 // undefined
 // yellow
-
-
-
