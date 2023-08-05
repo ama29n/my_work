@@ -16,8 +16,6 @@
 
 
 
-
-
 // FilterRange in place
 
 // let arr = [5, 3, 8, 1];
@@ -38,9 +36,6 @@
 
 
 
-
-
-
 // Sort in descending order
 
 // let arr = [5, 2, 1, -10, 8];
@@ -53,12 +48,6 @@
 // arr.sort(compare);
 
 // console.log(arr);
-
-
-
-
-
-
 
 
 
@@ -90,10 +79,6 @@
 
 
 
-
-
-
-
 // Randomly sort an array
 
 // let arr = [1, 2, 3, 4, 5, 6, 7];
@@ -101,13 +86,6 @@
 // arr.sort((a, b) => Math.random() - 0.5);
 
 // console.log(arr);
-
-
-
-
-
-
-
 
 
 
@@ -127,8 +105,6 @@
 // let arr = [ john, pete, mary ];
 
 // console.log(getAverageAge(arr));
-
-
 
 
 

@@ -26,20 +26,22 @@ console.log(sum2(1)(2)(3)(4)(1)(2)(3)(4)());
 // Advanced Currying
 // Implement curry(fs) : which recieves a function fs(a, b, c)  as parameter and returns a new function of the form fs(a)(b)(c)
 
-function curry(func) {
-  return function curried_function(...args) {
-    if (args.length >= func.length) {
-      return func(...args);
+let fs = (a, b, c) => {
+  return a + b + c;
+};
+
+var curry = function (fn) {
+  return function curried(...args) {
+    if (args.length >= fn.length) {
+      return fn(...args);
     } else {
       return function (...next) {
-        return curried_function(...args, ...next);
+        return curried(...args, ...next);
       };
     }
   };
-}
+};
 
-const sum = (a, b, c) => a + b + c;
+let newSum = curry(fs);
 
-const total_sum = curry(sum);
-
-console.log(total_sum(1)(2)(3));
+console.log(newSum(1)(2)(3));

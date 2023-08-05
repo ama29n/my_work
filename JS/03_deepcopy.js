@@ -5,6 +5,9 @@ function deepcopy(obj) {
       newObj[key] = [...value];
     } else if (typeof value === "object") {
       newObj[key] = deepcopy(value);
+    } else if (typeof value === "function") {
+      let fs = JSON.stringify(value);
+      newObj[key] = new Function(fs);
     } else {
       newObj[key] = value;
     }
@@ -30,4 +33,4 @@ let obj = {
 };
 
 let obj2 = deepcopy(obj);
-console.log(obj2);
+console.log(obj2.fs === obj.fs);
