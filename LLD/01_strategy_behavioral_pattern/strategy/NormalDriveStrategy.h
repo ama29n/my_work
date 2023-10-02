@@ -4,7 +4,7 @@
 
 using namespace std;
 
-class NormalDrive : public DriveStrategy {
+class NormalDriveStrategy : public DriveStrategy {
 public:
     void drive() override {
         cout << "Normal Drive Implimenting Drive Strategy" << endl;
