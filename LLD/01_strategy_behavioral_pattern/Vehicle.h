@@ -8,7 +8,7 @@ public:
 
     }
 
-    // Constructor Injection
+    // constructor injection
     Vehicle(DriveStrategy *_driveObj) {
         driveObj = _driveObj;
     }

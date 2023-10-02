@@ -10,16 +10,16 @@ private:
     StockObservable *stockItemObj;
 public:
 
-    // Default Constructor
+    // default constructor
     EmailAlertObserver() {
 
     }
 
-    // Constructor Injection
+    // constructor injection
     EmailAlertObserver(StockObservable *obj) {
         stockItemObj = obj;
 
-        // Add the observer to observable's list
+        // add the observer to observable's list
         stockItemObj->add(this);
     }
 
