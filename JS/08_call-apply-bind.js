@@ -74,7 +74,7 @@ for(let i = 0; i < animals.length; i++) {
 
 // 3. Append an array to another Array 
 
-let arr1 = [1, 2, 3, 4];
+let arr1 = [1, 2, 3, 4];    
 let arr2 = [5, 6];
 
 // Concat return an array but the original array is not modified
